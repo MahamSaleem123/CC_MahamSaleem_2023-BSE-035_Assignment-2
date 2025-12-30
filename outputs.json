@@ -1,0 +1,112 @@
+{
+  "aws_region": {
+    "sensitive": false,
+    "type": "string",
+    "value": "us-east-1"
+  },
+  "backend_public_ips": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "web-1": "string",
+        "web-2": "string",
+        "web-3": "string"
+      }
+    ],
+    "value": {
+      "web-1": "13.220.238.38",
+      "web-2": "100.31.235.112",
+      "web-3": "3.231.19.239"
+    }
+  },
+  "backend_servers_info": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "web-1": [
+          "object",
+          {
+            "instance_id": "string",
+            "private_ip": "string",
+            "public_ip": "string"
+          }
+        ],
+        "web-2": [
+          "object",
+          {
+            "instance_id": "string",
+            "private_ip": "string",
+            "public_ip": "string"
+          }
+        ],
+        "web-3": [
+          "object",
+          {
+            "instance_id": "string",
+            "private_ip": "string",
+            "public_ip": "string"
+          }
+        ]
+      }
+    ],
+    "value": {
+      "web-1": {
+        "instance_id": "i-073f3c38e8631260b",
+        "private_ip": "10.0.10.83",
+        "public_ip": "13.220.238.38"
+      },
+      "web-2": {
+        "instance_id": "i-090ebcd121302a67c",
+        "private_ip": "10.0.10.174",
+        "public_ip": "100.31.235.112"
+      },
+      "web-3": {
+        "instance_id": "i-07ce7ebde0450ae8c",
+        "private_ip": "10.0.10.165",
+        "public_ip": "3.231.19.239"
+      }
+    }
+  },
+  "configuration_guide": {
+    "sensitive": false,
+    "type": "string",
+    "value": "========================================\r\nDEPLOYMENT SUCCESSFUL\r\n========================================\r\nNginx Public IP:\r\n34.236.245.38\r\n\r\nBackend Private IPs:\r\n- web-1: 10.0.10.83\r\n- web-2: 10.0.10.174\r\n- web-3: 10.0.10.165\r\n\r\nRestart Nginx after updating backend IPs:\r\nsudo systemctl restart nginx\r\n========================================\r\n"
+  },
+  "environment": {
+    "sensitive": false,
+    "type": "string",
+    "value": "prod"
+  },
+  "nginx_instance_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "i-01f930aeeecbbbfa1"
+  },
+  "nginx_public_ip": {
+    "sensitive": false,
+    "type": "string",
+    "value": "34.236.245.38"
+  },
+  "project_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "assignment2"
+  },
+  "resource_prefix": {
+    "sensitive": false,
+    "type": "string",
+    "value": "assignment2-prod"
+  },
+  "subnet_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "subnet-03a702b833d332d6d"
+  },
+  "vpc_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "vpc-016e7208da1dcb8fe"
+  }
+}

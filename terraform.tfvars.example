@@ -1,0 +1,6 @@
+aws_region     = "us-east-1"
+environment    = "dev"
+project_name   = "assignment2"
+instance_type  = "t2.micro"
+
+# DO NOT PUT REAL KEYS OR IPs HERE
